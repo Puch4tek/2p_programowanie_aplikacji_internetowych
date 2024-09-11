@@ -5,12 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>T03 - porównanie programowania strukturalnego i obiektowego</title>
 </head>
 <body>
-    <header>
-        <h1>T03 - porównanie programowania strukturalnego i obiektowego</h1>
-        <h2>Autor: Jakub Grzegorczyk 2P</h2>
-    </header>
+<header>
+    <h1>T03 - porównanie programowania strukturalnego i obiektowego</h1>
+    <h2>Autor: Jakub Grzegorczyk 2P</h2>
+</header>
+<div id="main">
+    <div class="types">
+        <h1>Programowanie strukturalne</h1>
+        <p>
+            Paradygmat programowania zakładający rozdzielenie
+            funkcjonalności programu na moduły (podprogramy).
+            Komunikują się one ze sobą przez określone interfejsy.
+        </p>
+        <p>
+            Jest rozszerzeniem programowania proceduralnego
+            (poprawa przejrzystości i jakości kodu oraz
+            przyśpieszenie tworzenia oprogramowania).
+        </p>
+        <h2>Założenia programowania strukturalnego</h2>
+        <ul>
+            <li>Podzielone bloki kodu mają jeden punkt wejścia (mogą
+                mieć wiele punktów wyjścia)
+            </li>
+            <li>Wykonywanie wyrażeń w określonej kolejności</li>
+            <li>Używanie instrukcji warunkowych (if , if else)</li>
+            <li>Używanie pętli (for, while, do while)</li>
+            <li>Unikanie instrukcji skoku (goto)</li>
+            <li>Unikanie instrukcji break, continue</li>
+        </ul>
+    </div>
+    <div class="types">
+        <h1>Programowanie obiektowe</h1>
+        <p>Paradygmat programowania zakładający reprezentację
+            problemów w postaci obiektów, przypisanie im działań
+            (metod), które mogą wykonywać oraz umieszczenie pól,
+            które opisują dany obiekt.</p>
+        <p>Jest to podejście bardziej naturalne dla ludzi, bardziej
+            zgodne z rzeczywistością.</p>
+        <h2>Założenia programowania obiektowego</h2>
+        <ul>
+            <li>Abstrakcja</li>
+            <li>Hermetyzacja danych (enkapsulacja)</li>
+            <li>Dziedziczenie</li>
+            <li>Polimorfizm</li>
+        </ul>
+        <h3>Abstrakcja</h3>
+        <p>Zredukowanie właściwości opisywanego obiektu do
+            najbardziej podstawowych, ograniczenie zakresu
+            funkcjonalności obiektu do kluczowych dla danego
+            zagadnienia działań.</p>
+        <p>Ukrycie funkcjonalności za interfejsem, uogólnienie
+            implementacji.</p>
+        <hr>
+        <h3>Enkapsulacja</h3>
+        <p>Inaczej hermetyzacja danych.</p>
+        <p>Dostęp do składowych jest ograniczony za pomocą
+            dobrze określonego interfejsu, czyli obiekt udostępnia
+            tylko pewien zbiór metod, które są widoczne z zewnątrz i
+            mogą być wywoływane.</p>
+        <p>Dostęp do pól obiektu powinien być realizowany poprzez
+            odpowiednie metody(Settery/gettery) a nie przez
+            bezpośredni dostęp do nich.</p>
+        <hr>
+        <h3>Dziedziczenie</h3>
+        <p>Mechanizm umożliwiający wywodzenie nowych klas z klas
+            już istniejących, wraz z przejmowaniem ich metod. Dzięki
+            czemu zyskujemy wszystkie już istniejące funkcjonalności,
+            które dodatkowo możemy rozszerzyć lub zmienić.</p>
+        <hr>
+        <h3>Polimorfizm</h3>
+        <p>Mechanizm pozwalający na używanie metod itp. na różny
+            sposób, np. przeciążając metodę toString, aby akceptowała
+            zmienne typu int, float, decimal i każdą z nich
+            konwertowała właściwie do ciągu znakowego.</p>
+    </div>
+    <div class="types">
+        <h1>Różnice</h1>
+        <p>W programowaniu strukturalnym mamy podprogramy
+            (funkcje), które odpowiednio ułożone i wywołane tworzą
+            program.</p>
+        <p>Natomiast w p. obiektowym funkcjonalności są
+            przypisane obiektom, zatem trudniej tutaj o pomyłkę np.
+            taką jak przekazanie złej zmiennej do funkcji.</p>
+    </div>
+</div>
 </body>
 </html>
