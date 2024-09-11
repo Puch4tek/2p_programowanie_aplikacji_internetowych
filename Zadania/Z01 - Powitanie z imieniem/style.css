@@ -1,0 +1,23 @@
+body {
+    font-family: Verdana, serif;
+    background: #ffffff;
+    margin: 30px;
+}
+header {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    background: #f0f0f0;
+}
+div {
+    margin: 10px;
+}
+button {
+    border: 2px darkgreen solid;
+    background: #d8ffd8;
+    border-radius: 0.3em;
+}
+input {
+    border-radius: 0.3em;
+    border: black 2px solid;
+}

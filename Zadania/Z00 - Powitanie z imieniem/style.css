@@ -1,0 +1,14 @@
+body {
+    font-family: Verdana, serif;
+    background: #ffffff;
+    margin: 30px;
+}
+header {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    background: #f0f0f0;
+}
+div {
+    margin: 10px;
+}
