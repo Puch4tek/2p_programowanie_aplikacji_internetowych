@@ -27,7 +27,8 @@ input {
 button {
     margin-top: 10px;
     padding: 5px;
-    width: 6em;
+    width: 22.8em;
     border: black 2px solid;
-    border-radius: 1em;
+    border-radius: 0.5em;
+    font-weight: bold;
 }
