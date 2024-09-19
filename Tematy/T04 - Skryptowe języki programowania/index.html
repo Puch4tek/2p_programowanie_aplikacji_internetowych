@@ -2,9 +2,236 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>T04 - Skryptowe języki programowania</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
+    <h1>T04 - Skryptowe języki programowania</h1>
+    <h2>Autor: Jakub Grzegorczyk</h2>
+</header>
+<section>
+    <div>
+        <p><b>Aplikacja internetowa</b> to program, który pracuje na serwerze i komunikuje się z użytkownikiem poprzez
+            sieć
+            komputerową z wykorzystaniem przeglądarki internetowej. Przeglądarka internetowa w takim przypadku pełni
+            funkcję interfejsu użytkownika.
+            W aplikacji internetowej zakłada się interakcję z użytkownikiem, korzystanie z baz danych i innych usług,
+            często rozproszonych, umieszczonych na wielu różnych serwerach.
+            Istotnymi cechami aplikacji internetowej są łatwość i szybkość dotarcia do informacji (dowolny komputer
+            podłączony do internetu lub sieci LAN i przeglądarka stron internetowych) oraz bezpieczeństwo danych (login
+            i hasło, szyfrowanie połączenia oraz system uprawnień).
+        </p>
+    </div>
+    <div>
+        <h2>Zalety aplikacji internetowych</h2>
+        <ul>
+            <li>dostępność dla wszystkich zainteresowych bez ograniczeń związanych z czasem i miejscem,</li>
+            <li>praktycznie brak konieczności instalowania dodatkowego oprogramowania - aby korzystać z aplikacji
+                internetowej wystarczy przeglądarka internetowa (czasem tylko z dodatkowymi pluginami),
+            </li>
+            <li>brak konieczności zakupu dodatkowego sprzętu komputerowego - aplikacja internetowa może zostać
+                zainstalowana na serwerze dostępnym w internecie,
+            </li>
+            <li>łatwość utrzymania i modernizacji, ponieważ zmiany i aktualizacje w aplikacji są wykonywane na serwerze
+                bez udziału użytkowników aplikacji,
+            </li>
+            <li>łatwość integracji aplikacji internetowej z innymi usługami, np. stroną internetową,</li>
+            <li>niższe koszty wytworzenia, uruchomienia i utrzymania aplikacji internetowej w porównaniu z innymi
+                rozwiązaniami - większość technologii stosowanych do wytworzenia aplikacji internetowych jest bezpłatna.
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h2>Narzędzia aplikacji internetowych</h2>
+        <p>
+            Do prawidłowej pracy aplikacji internetowej potrzebne jest:
+        </p>
+        <ul>
+            <li>oprogramowanie zwane serwerem WWW (na przykład Apache, IIS)</li>
+            <li>oprogramowanie wspomagające (serwer bazodanowy — na przykład MySQL, MS SQL)</li>
+            <li>środowisko do tworzenia programów (na przykład PHP, Java, C#)</li>
+        </ul>
+        <p>Z serwerem WWW komunikuje się przeglądarka internetowa, a serwer bazodanowy i interpreter umożliwiają
+            udostępnianie dynamicznie tworzonych stron internetowych oraz zarządzanie bazami danych.</p>
+        <p>
+            Narzędzia stosowane podczas pracy z aplikacją internetową można podzielić na dwie grupy:
+        </p>
+        <ul>
+            <li>Narzędzia po stronie klienta — pozwalają klientowi wykonywać część zadań związanych z obsługą aplikacji.
+                Należą do nich JavaScript, aplety Java, AJAX i inne.
+            </li>
+            <li>Narzędzia po stronie serwera — pozwalają wykonywać na serwerze zadania służące do obsługi żądań klienta.
+                Są to technologie typu: ASP.NET (Active Server Pages), JavaServer Pages (JSP) i języki PHP, Perl,
+                Coldfusion, Ruby on Rails i wiele innych.
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h2>Technologie po stronie klienta</h2>
+        <ul>
+            <li><b>JavaScript</b></li>
+        </ul>
+        <p>Technologie działające po stronie klienta są związane z rodzajem oprogramowania klienckiego, czyli
+            przeglądarki internetowej i zainstalowanych wtyczek. Najczęściej wspomagają one technologie działające po
+            stronie serwera.
+            Podstawową technologią stosowaną po stronie klienta jest JavaScript. Jest to język skryptowy, którego kod
+            można wstawić w kod strony HTML w celu uzyskania dynamiki strony.
+            JavaScript jest obecnie wspierany przez wszystkie przeglądarki i nie wymaga instalowania dodatkowego
+            oprogramowania.
+        </p>
+        <ul>
+            <li><b>Aplety Java</b></li>
+        </ul>
+        <p>Inną technologią, która może być stosowana po stronie klienta, są aplety Java. Aplety te pisane są w języku
+            Java, a do ich wykonania potrzebne jest zainstalowanie w przeglądarce wtyczki Java Virtual Machine. Aplety
+            Java są coraz rzadziej stosowane ze względu na zajmowanie zbyt wielu zasobów komputera i rozwój innych
+            technologii.</p>
+        <ul>
+            <li><b>Flash</b></li>
+        </ul>
+        <p>Technologia Flash to kolejne narzędzie, które może być stosowane po stronie klienta. Dostarcza ono narzędzi
+            do tworzenia animacji i efektów graficznych. Technologia Flash wymaga instalowania w przeglądarce specjalnej
+            wtyczki Adobe Flash Player.</p>
+        <ul>
+            <li><b>AJAX</b></li>
+        </ul>
+        <p>AJAX (ang. Asynchronous JavaScript and XML) to technologia uzupełniająca język JavaScript. Oferuje ona te
+            same działania po stronie klienta co JavaScript. Ale w technologii AJAX komunikacja z serwerem jest
+            realizowana w tle, podczas gdy użytkownik pracuje na stronie WWW.</p>
+        <h2>Technologie po stronie serwera</h2>
+        <p>Technologie działające po stronie serwera powodują, że klient otrzymuje gotową stronę internetową
+            wygenerowaną z uwzględnieniem kryteriów określonych przez użytkownika.</p>
+        <ul>
+            <li><b>CGI</b></li>
+        </ul>
+        <p>Pierwszą technologią, która zyskała popularność i jest stosowana nadal w niektórych aplikacjach, była
+            technologia CGI (ang. Common Gateway Interface). Umożliwiała ona między innymi dynamiczne generowanie
+            dokumentów przed wysłaniem ich do przeglądarki, tworzenie dokumentów w oparciu o dane znajdujące się w
+            bazie, generowanie i przetwarzanie formularzy. Skrypty CGI mogą być programami kompilowanymi do postaci
+            binarnej lub programami interpretowanymi, pisanymi np. w Perlu lub w języku skryptowym powłoki.</p>
+        <ul>
+            <li><b>ISAPI</b></li>
+        </ul>
+        <p>Filtry ISAPI (ang. Internet Server API), których działanie jest sterowane zdarzeniami serwera, a nie
+            żądaniami klienta. Zaletą tej technologii jest szybkość działania oraz większa wydajność w porównaniu z
+            technologią CGI. Jej wadą jest działanie tylko w systemach Windows.
 
+            Obecnie popularne stały się technologie, które generują strony WWW poprzez interpretowanie kodu osadzonego
+            wewnątrz strony.
+        </p>
+        <ul>
+            <li><b>ASP.NET</b></li>
+        </ul>
+        <p>Jest to bardzo wydajna i nowoczesna technologia opracowana przez firmę Microsoft. Przeznaczona została do
+            tworzenia różnych aplikacji internetowych w formatach HTML, WML oraz XML. Tworzone dokumenty zawierają
+            statyczną treść, ale w ramach kodu statycznego istnieje możliwość dodania kodu dynamicznego.</p>
+        <ul>
+            <li><b>JSP</b></li>
+        </ul>
+        <p>JavaServer Pages — wraz z innymi elementami wchodzącymi w skład platformy Java Platform firmy Sun umożliwia
+            tworzenie dynamicznych dokumentów WWW w formatach HTML, XHTML, DHTML oraz XML z wykorzystaniem języka Java.
+            Jest to rozwiązanie podobne do technologii PHP.</p>
+        <ul>
+            <li><b>PHP</b></li>
+        </ul>
+        <p>Wraz z serwerem WWW Apache oraz serwerem baz danych MySQL tworzy wydajną i niezależną od systemu platformę do
+            budowania dynamicznych stron WWW. Platforma ta określana jest jako platforma AMP. W systemach Linux znana
+            jest pod nazwą LAMP, a w systemie Windows pod nazwą WAMP. Istnieje również wieloplatformowa wersja, nazywana
+            XAMPP. PHP jest systemem otwartym, dzięki czemu powstają coraz nowsze moduły rozszerzające jego możliwości.
+            PHP jest nie tylko technologią funkcjonującą po stronie serwera. Jest to również język skryptowy,
+            wykorzystywany przy pracy nad aplikacjami uruchamianymi niezależnie od serwera WWW.</p>
+    </div>
+    <div>
+        <h2>Struktura aplikacji internetowej</h2>
+        <p>Podstawowa architektura aplikacji internetowej zakłada, że na komputerze użytkownika funkcjonuje wyłącznie
+            oprogramowanie obsługi interfejsu użytkownika, natomiast oprogramowanie właściwej aplikacji oraz
+            oprogramowanie dostępu do danych znajdują się na oddzielnych, dedykowanych komputerach. Takie rozwiązanie
+            pozwala na współbieżny dostęp do danych i aplikacji oraz obniża wymagania dla komputera użytkownika.</p>
+        <img src="img/1.png" alt="">
+        <p>Rozszerzona architektura aplikacji internetowej zakłada, że w jej skład wchodzą trzy programowe warstwy
+            funkcjonalne:</p>
+        <ul>
+            <li><b>Warstwa klienta</b> — odpowiedzialna za interfejs użytkownika i interakcję z użytkownikiem, oparta na
+                kliencie HTTP.
+            </li>
+            <li><b>Warstwa aplikacji</b> — która w odpowiedzi na żądania klientów tworzy dokumenty dynamiczne. Warstwa
+                ta
+                składa się z serwera HTTP i serwera aplikacji będącego środowiskiem uruchomieniowym dla aplikacji
+                generujących dokumenty dynamiczne.
+            </li>
+            <li><b>Warstwa danych</b> — która odpowiada za udostępnianie informacji umieszczanych w dokumentach
+                dynamicznych.
+                Warstwa ta składa się z serwera bazy danych, który odpowiada na żądania w języku SQL
+            </li>
+        </ul>
+        <img src="img/2.png" alt="">
+        <p>Istotnym elementem tej architektury jest serwer aplikacji. Odpowiada on za obsługę komunikacji z warstwą
+            klienta i warstwą danych. Programista, który tworzy aplikacje internetowe, nie musi tworzyć kodu obsługi
+            protokołu HTTP z klientem ani kodu obsługi komunikacji SQL z serwerem bazy danych. Ponadto serwer aplikacji
+            realizuje inne typowe funkcje, np. obsługę transakcji, rejestrację żądań w plikach dziennika, autoryzację
+            dostępu użytkowników do aplikacji.</p>
+        <p>Aplikacje internetowe najczęściej buduje się w ten sposób, że poszczególne funkcje systemowe w celu ich
+            separacji są rozdzielone pomiędzy różne komponenty. Stosowane są dwie metody:</p>
+        <ul>
+            <li><b>architektura 4-warstwowa (4-tier architecture)</b></li>
+            <li><b>architektura Model-View-Controller.</b></li>
+        </ul>
+        <h3>Architektura 4-warstwowa</h3>
+        <p>Nazywa się tak, ponieważ definiuje cztery warstwy aplikacji internetowej. Są to warstwy:</p>
+        <ul>
+            <li><b>klienta,</b></li>
+            <li><b>logiki prezentacji,</b></li>
+            <li><b>logiki biznesowej,</b></li>
+            <li><b>danych.</b></li>
+        </ul>
+        <p>Składniki aplikacji są podzielone na dwie grupy: składniki logiki prezentacji i składniki logiki
+            biznesowej.</p>
+        <p>Zadania składników logiki prezentacji to:</p>
+        <ul>
+            <li>przyjmowanie żądań od klientów,</li>
+            <li>wywoływanie funkcji składników logiki biznesowej,</li>
+            <li>generowanie dokumentów dynamicznych</li>
+            <li>wypełnianie ich danymi przekazywanymi przez składniki logiki biznesowej.</li>
+        </ul>
+        <p>Zadania składników logiki biznesowej to:</p>
+        <ul>
+            <li>realizacja procesów biznesowych</li>
+            <li>komunikacja z bazą danych</li>
+        </ul>
+        <img src="img/3.png" alt="">
+        <h3>Architektura Model-View-Controller (MVC)</h3>
+        <p>
+            Jest dalszym rozwinięciem architektury 4-warstwowej. Składniki aplikacji internetowej są podzielone na trzy
+            grupy:
+        </p>
+        <ul>
+            <li><b>składniki sterujące</b> — logika sterowania (controller) - przyjmują żądania od klientów oraz
+                koordynują ich obsługę (wywoływanie funkcji składników modelu i prezentacji)
+            </li>
+            <li><b>składniki prezentacji</b> — logika prezentacji (view) - tworzą dokumenty dynamiczne i wypełniają je
+                danymi dostarczanymi przez składniki modelu.
+            </li>
+            <li><b>składniki modelu</b> — logika biznesowa (model) - odpowiadają za realizację procesów biznesowych i
+                komunikację z bazą danych.
+            </li>
+        </ul>
+        <img src="img/4.png" alt="">
+    </div>
+    <div>
+        <p><b>Zaletą technologii aplikacji internetowych</b> jest to, że użytkownik korzystający z takiej aplikacji
+            może
+            posługiwać się tylko programem klienta HTTP, który zwykle ma małe wymagania sprzętowe. Dzięki temu dostęp do
+            aplikacji internetowych możliwy jest też za pomocą tabletu czy telefonu komórkowego. Inną zaletą jest wygoda
+            administrowania aplikacjami internetowymi. Są one umieszczane na pojedynczym komputerze (serwerze
+            aplikacji), w związku z tym prace administracyjne dotyczą tylko tego komputera.</p>
+        <p><b>Wadą technologii aplikacji internetowych</b> są koszty, jakie należy ponieść, aby wdrożyć ten system (np.
+            konieczność zakupu serwera o dużej mocy obliczeniowej czy zakupu komercyjnego oprogramowania serwera
+            aplikacji). Inną niedogodnością są trudności z wytwarzaniem oprogramowania.
+            Serwerami aplikacji są np.: poss Application Server (serwer aplikacji w Javie na licencji LGPL), IBM
+            WebSphere (serwer aplikacji JEE oferowany przez firmę IBM), platforma .NET Microsoft.
+        </p>
+    </div>
+</section>
 </body>
 </html>
