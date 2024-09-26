@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, serif;
+    background: #ffffff;
+    margin: 30px;
+}
+header {
+    border: 2px solid black;
+    border-radius: 1em;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 5px;
+    background: #f0f0f0;
+}
+.box {
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 1em;
+    margin: 10px 0 10px 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 5px;
+}
+#ex12 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#ex15 {
+    width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#ex16 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+pre {
+    font-family: Verdana, serif;
+}
+#ex17 {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
