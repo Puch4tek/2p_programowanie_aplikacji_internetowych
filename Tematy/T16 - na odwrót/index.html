@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T16 - na odwrót</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Zadanie T16</h1>
+    <h2>Autor: Jakub Grzegorczyk</h2>
+</header>
+<div>
+    <pre>
+    Zadanie: NAO
+
+    1. Na odwrót
+
+    Zadaniem Twojego programu będzie wczytanie trzech liczb całkowitych i wypisanie ich w takiej samej kolejności oraz w kolejności odwrotnej.
+
+    Wejście
+
+    Za pomocą funkcji Prompt() należy wczytać trzy liczby całkowite a, b, c (−1000 ≤ a, b, c ≤ 1000).
+
+    Wyjście
+
+    W pierwszym wierszu należy wypisać podane liczby w kolejności wczytania: a, b, c. W drugim wierszu należy wypisać podane liczby w kolejności odwrotnej do kolejności wczytania: c, b, a. W obu wierszach liczby powinny być rozdzielane pojedynczymi spacjami. Wyświetlenie należy zrealizować na stronie oraz w konsoli przeglądarki.
+
+    Przykład Dla danych wejściowych: 7 3 5
+
+    poprawnym wynikiem jest:
+    7 3 5
+    5 3 7</pre>
+</div>
+<div id="wynik">
+    <script>
+        let a = prompt("Podaj liczbę a: ", 1);
+        let b = prompt("Podaj liczbę b: ", 1);
+        let c = prompt("Podaj liczbę c: ", 1);
+
+        document.write(`${a}, ${b}, ${c} <br>`);
+        document.write(`${c}, ${b}, ${a} <br>`);
+    </script>
+</div>
+</body>
+</html>
