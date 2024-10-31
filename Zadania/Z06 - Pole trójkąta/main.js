@@ -9,7 +9,7 @@ btn.addEventListener('click', function () {
     let a = parseFloat(liczba_a.value);
     let b = parseFloat(liczba_b.value);
     let c = parseFloat(liczba_c.value);
-    if (a+b>c&&a+c>b&&b+c>a) {
+    if (a + b > c && a + c > b && b + c > a) {
         let p = 0.5 * (a + b + c);
         let S = Math.sqrt(p * (p - a) * (p - b) * (p - c));
 
