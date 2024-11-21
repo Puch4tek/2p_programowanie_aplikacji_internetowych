@@ -32,6 +32,10 @@ btn.addEventListener('click', () => {
             rodzaj = "żaden z wymienionych";
         }
 
+        if (a === b & a === c & b ===c ) {
+            rodzaj = "równoboczny";
+        } else if (b ===c)
+
         wynik.innerHTML =
             `
             <p>
