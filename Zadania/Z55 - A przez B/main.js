@@ -16,24 +16,16 @@ btn.addEventListener('click', () => {
         } else if (a / b === 0) {
             res = "ZERO";
         }
-        wynik.innerHTML =
-            `
-            <p>
-            A = <b>${a}</b><br>
-            B = <b>${b}</b><br>
-            Odpowiedź: <b>${res}</b><br>
-            </p>
-            `
+
     } else {
         res = "ZERO";
-        wynik.innerHTML =
-            `
+    }
+    wynik.innerHTML =
+        `
             <p>
             A = <b>${a}</b><br>
             B = <b>${b}</b><br>
             Odpowiedź: <b>${res}</b><br>
             </p>
             `
-    }
-
 })
