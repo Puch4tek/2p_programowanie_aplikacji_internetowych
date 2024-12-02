@@ -29,7 +29,7 @@ btn.addEventListener('click', () => {
         } else if (Math.pow(inna1,2) + Math.pow(inna2, 2) < Math.pow(highest, 2)) {
             rodzaj = "rozwartokątny";
         } 
-        if (a === b & a === c & b === c ) {
+        if (a === b && a === c && b === c ) {
             rodzaj = "równoboczny";
         } else if (b === c || a === c || a === b) {
             rodzaj = "równoramienny"
