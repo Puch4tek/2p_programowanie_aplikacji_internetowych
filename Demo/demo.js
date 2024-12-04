@@ -1,5 +1,6 @@
-let a = 4000;
-let godziny = Math.floor(a / 3600);
-let minuty = Math.floor((a % 3600)  / 60);
-let sekundy = a % 60;
-console.log(a, godziny, minuty, sekundy);
+for (let i = 0; i <= 30; i++){
+    if ((i % 3) !== 0){
+        continue;
+    }
+    console.log(i + "; ");
+}
