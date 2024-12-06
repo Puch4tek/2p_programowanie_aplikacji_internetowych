@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie T22-3</title>
+</head>
+<body>
+<script>
+/*
+    Napisz funkcję, która dla podanej liczby całkowitej w zakresie od 1 do 12 zwraca nazwę miesiąca w języku polskim. W przypadku podania innej wartości zwraca informację o błędzie.
+*/
+    function miesiace(x) {
+        switch (x) {
+            case 1:
+                return "Styczeń";
+            case 2:
+                return "Luty";
+            case 3:
+                return "Marzec";
+            case 4:
+                return "Kwiecień";
+            case 5:
+                return "Maj";
+            case 6:
+                return "Czerwiec";
+            case 7:
+                return "Lipiec";
+            case 8:
+                return "Sierpień";
+            case 9:
+                return "Wrzesień";
+            case 10:
+                return "Październik";
+            case 11:
+                return "Listopad";
+            case 12:
+                return "Grudzień";
+        }
+    }
+document.write("Nazwa miesiąca to: " + miesiace(1) + "<br>")
+</script>
+</body>
+</html>

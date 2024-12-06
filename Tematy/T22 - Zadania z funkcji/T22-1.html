@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie T22-1</title>
+</head>
+<body>
+<script>
+    /*Napisz funkcję, która dla podanej liczby zwraca (return) jej wartość bezwzględną i zastosuj tę funkcję do wyświetlenia wyniku. Do obliczenia wartości bezwzględnej użyj instrukcji warunkowej (wariant 1) i operatora warunkowego "?" (wariant 2).*/
+    function isAbsolute1(a) {
+        if (a > 0) {
+            return a;
+        } else {
+            return -a;
+        }
+    }
+
+    document.write(isAbsolute1(123) + "<br>")
+    document.write(isAbsolute1(-123) + "<br>")
+
+    function isAbsolute2(a) {
+        return (a > 0) ? a : -a;
+    }
+
+    document.write(isAbsolute2(123) + "<br>")
+    document.write(isAbsolute2(-123) + "<br>")
+</script>
+</body>
+</html>
