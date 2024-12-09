@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Zadanie T24-4</title>
 </head>
 <body>
-
+<script>
+/*
+    Napisz funkcję, która będzie przyjmowała dwa argumenty liczbowe i będzie wypisywała mniejszą z nich w kolorze zielonym, a większą w czerwonym. W przypadku podania liczb jednakowych obie należy wyświetlić w kolorze niebieskim.
+*/
+function wiekszaMniejsza (a, b) {
+    let min, max;
+    min = Math.min(a, b);
+    max = Math.max(a, b);
+    if (a === b) {
+        document.write(
+            `<p>
+            <span style="color: blue">${min}</span>
+            <span style="color: blue">${max}</span>
+            </p>`)
+    } else {
+        document.write(
+            `<p>
+            <span style="color: green">${min}</span>
+            <span style="color: red">${max}</span>
+            </p>`)
+    }
+}
+wiekszaMniejsza(3,5);
+</script>
 </body>
 </html>

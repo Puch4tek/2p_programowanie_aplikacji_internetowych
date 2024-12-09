@@ -2,11 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Zadanie T22-5</title>
 </head>
 <body>
 <script>
-
+    /*
+    Napisz funkcję, która dla dwóch liczb całkowitych wyświetla ich wspólny dzielnik (przypomnij sobie algorytm Euklidesa).
+    */
+    function wspolnyDzielnik (a, b) {
+        while (a !== b) {
+            if (a > b)
+                a = a - b;
+            else
+                b = b - a;
+        }
+        document.write(`<p>${a}</p>`);
+    }
+    wspolnyDzielnik(16, 36)
 </script>
 </body>
 </html>
