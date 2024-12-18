@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T25a - Własny przykład obiektu na przykładzie 3.44</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Zadanie T25a</h1>
+    <h2>Autor: Jakub Grzegorczyk</h2>
+</header>
+<div>
+    <script>
+    const uczen = {
+        imie: "Jakub",
+        nazwisko: "Grzegorczyk",
+        klasa: "2P",
+        profil: "Technik Programista",
+        pokaz: function () {
+            document.write(this.imie + "<br>" + this.nazwisko + "<br>" + this.klasa + "<br>" + this.profil);
+        },
+    }
+    uczen.pokaz();
+</script>
+</div>
+</body>
+</html>
