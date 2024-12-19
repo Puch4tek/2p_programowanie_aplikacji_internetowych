@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T25b - Klient i jego zwierzak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Zadanie T25b</h1>
+    <h2>Autor: Jakub Grzegorczyk</h2>
+</header>
+<div>
+    <p>Posługując się przykładem obiektu opisującego osobę dodaj obiekt zwierzaka, którego posiadaczem jest osoba. Zaplanuj implementację pokazującą, że właścicielem obiektu zwierzak jest konkretna osoba.</p>
+</div>
+<div>
+    <script>
+        function Klient(nazwisko, imie, zawod) {
+            this.nazwisko = nazwisko;
+            this.imie = imie;
+            this.zawod = zawod;
+            this.alert = function () {
+                alert(`Imie: ${this.imie} Nazwisko: ${this.nazwisko}`);
+            }
+            this.info = function () {
+                document.write(`Imię: ${this.imie} <br>Nazwisko: ${this.nazwisko} <br>Zawód: ${this.zawod}<br><br>`);
+            }
+        }
+        function Zwierzak(imie, gatunek, wlasciciel) {
+            this.imie = imie;
+            this.gatunek = gatunek;
+            this.wlasciciel = wlasciciel;
+            this.info = function () {
+                document.write(`Imię: ${this.imie}<br>Gatunek: ${this.gatunek}<br>Właściciel: ${this.wlasciciel.imie} ${this.wlasciciel.nazwisko} <br><br>`);
+            }
+        }
+        let klient1 = new Klient("Nowak", "Jan", "Sprzedawca");
+        let klient2 = new Klient("Kowalska", "Anna", "Sekretarka");
+        let pies1 = new Zwierzak("Ben", "Pies", klient1);
+        klient1.alert();
+        klient1.info();
+        klient2.info();
+        pies1.info();
+        //================================================
+        let malyKotek = new Zwierzak("Kotek", "Kot", "");
+        malyKotek.info();
+        malyKotek.wlasciciel = klient2;
+        malyKotek.imie = "Mikesz";
+        malyKotek.info();
+        //================================================
+    </script>
+</div>
+</body>
+</html>
