@@ -8,12 +8,12 @@ const wynik = document.querySelector('#wynik');
 const btn = document.querySelector('button');
 
 btn.addEventListener('click', function () {
-    let a1 = parseFloat(liczba_a1.value);
-    let b1 = parseFloat(liczba_b1.value);
-    let c1 = parseFloat(liczba_c1.value);
-    let a2 = parseFloat(liczba_a2.value)
-    let b2 = parseFloat(liczba_b2.value)
-    let c2 = parseFloat(liczba_c2.value)
+    let a1 = parseFloat(liczba_a1.value());
+    let b1 = parseFloat(liczba_b1.value());
+    let c1 = parseFloat(liczba_c1.value());
+    let a2 = parseFloat(liczba_a2.value())
+    let b2 = parseFloat(liczba_b2.value())
+    let c2 = parseFloat(liczba_c2.value())
     let y = (c2*a1-c1*a2)/(b2*a1 - a2*b1)
     let x = (c1-b1*y)/(a1)
 
