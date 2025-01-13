@@ -42,7 +42,7 @@ function przekatnaTablicy(arr) {
         LG_PD+=arr[i][i];
         LD_PG+=arr[m-i][i];
     }
-    if (LG_PD==LD_PG) return `Suma Przekątnych jest równa i wynosi ${LG_PD}`;
+    if (LG_PD===LD_PG) return `Suma Przekątnych jest równa i wynosi ${LG_PD}`;
     if (LG_PD>LD_PG) return `Suma LG_PD jest większa i wynosi ${LG_PD} > ${LD_PG}`;
     if (LD_PG>LG_PD) return `Suma LD_PG jest większa i wynosi ${LD_PG} > ${LG_PD}`;
 }
@@ -50,7 +50,7 @@ function przekatnaTablicy(arr) {
 let resultTab = createArr(3);
 console.log(przekatnaTablicy(resultTab));
 
-btn.addEventListener('click', e => {
+btn.addEventListener('click', () => {
     wynik1.innerHTML = displayArr(resultTab)
     wynik2.innerHTML = przekatnaTablicy(resultTab)
 })
