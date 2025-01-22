@@ -30,9 +30,32 @@ function countingA (table) {
     return countA;
 }
 
+function countingMaxBRows (table) {
+    let maxCount = 0;
+    let rowI = -1;
+    let rows = 7;
+    let cols = 7;
+    for (let i = 0; i < rows; i++) {
+        let countB = 0;
+        for (let j = 0; table[i][j] !== undefined; j++) {
+            if (table[i][j] === 'b') {
+                countB++;
+            }
+        }
+        if (countB > maxCount) {
+            maxCount = countB;
+            rowI = i;
+        }
+    }
+    return rowI;
+}
+
 btn.addEventListener('click', () => {
     const table = fillArray();
     const countA = countingA(table);
-
+    const countB = countingMaxBRows(table);
+    wynik1.innerHTML = `<p>Tablica:</p><pre>${table.map(row => row.join(' ')).join('\n')}</pre>`;
     wynik2.innerHTML = `<p>Liczba wystąpień litery 'a': ${countA}</p>`;
+    wynik2.innerHTML += `<p>Najwięcej 'b' znajduje się w wierszu 'b': ${countB}</p>`;
+
 });
