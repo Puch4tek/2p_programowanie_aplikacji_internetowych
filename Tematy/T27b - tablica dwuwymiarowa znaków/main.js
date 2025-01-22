@@ -56,6 +56,6 @@ btn.addEventListener('click', () => {
     const countB = countingMaxBRows(table);
     wynik1.innerHTML = `<p>Tablica:</p><pre>${table.map(row => row.join(' ')).join('\n')}</pre>`;
     wynik2.innerHTML = `<p>Liczba wystąpień litery 'a': ${countA}</p>`;
-    wynik2.innerHTML += `<p>Najwięcej 'b' znajduje się w wierszu 'b': ${countB}</p>`;
+    wynik2.innerHTML += `<p>Najwięcej 'b' znajduje się w wierszu: ${countB}</p>`;
 
 });
