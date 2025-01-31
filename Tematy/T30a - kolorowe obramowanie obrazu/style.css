@@ -38,6 +38,7 @@ pre {
     font-family: Verdana, serif;
 }
 
-#wynik {
-    font-family: monospace;
+#image {
+    width: 400px;
+    height: 400px;
 }

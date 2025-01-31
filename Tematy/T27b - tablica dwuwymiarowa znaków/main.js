@@ -30,24 +30,27 @@ function countingA (table) {
     return countA;
 }
 
+//write a function that will tell in which row is the most 'b'
+
 function countingMaxBRows (table) {
-    let maxCount = 0;
-    let rowI = -1;
     let rows = 7;
     let cols = 7;
+    let maxB = 0;
+    let maxBRow = 0;
     for (let i = 0; i < rows; i++) {
         let countB = 0;
-        for (let j = 0; table[i][j] !== undefined; j++) {
+        for (let j = 0; j < cols; j++) {
             if (table[i][j] === 'b') {
                 countB++;
             }
         }
-        if (countB > maxCount) {
-            maxCount = countB;
-            rowI = i;
+        if (countB > maxB) {
+            maxB = countB;
+            maxBRow = i;
         }
     }
-    return rowI;
+    maxBRow += 1;
+    return maxBRow;
 }
 
 btn.addEventListener('click', () => {
@@ -56,6 +59,6 @@ btn.addEventListener('click', () => {
     const countB = countingMaxBRows(table);
     wynik1.innerHTML = `<p>Tablica:</p><pre>${table.map(row => row.join(' ')).join('\n')}</pre>`;
     wynik2.innerHTML = `<p>Liczba wystąpień litery 'a': ${countA}</p>`;
-    wynik2.innerHTML += `<p>Najwięcej 'b' znajduje się w wierszu: ${countB}</p>`;
+    wynik2.innerHTML += `<p>Najwięcej 'b' znajduje się w wierszu: ${countB + 1}</p>`;
 
 });

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T30b - kolorowe obramowanie obrazu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Zadanie T30b</h1>
+    <h2>Autor: Jakub Grzegorczyk</h2>
+</header>
+<div>
+    <p>Na stronie znajdują się następujące elementy:</p>
+
+    <ul>
+        <li>obrazek,</li>
+        <li>pole wyboru koloru,</li>
+        <li>suwak z zakresem od 1 do 100,</li>
+        <li>przycisk</li>
+    </ul>
+    <p>Po dokonaniu wyboru koloru i grubości oraz naciśnięciu przycisku skrypt rysuje ramkę wokół obrazka o zadanych
+        parametrach.</p>
+</div>
+<div>
+    <img id="image" src="img.png" alt="Obrazek">
+</div>
+<div>
+    <label for="color"></label><input type="color" id="color">
+    <label for="size"></label><input type="range" id="size" min="1" max="100">
+</div>
+<div>
+    <button id="btn">Wyświetl</button>
+</div>
+<div id="wynik"></div>
+<script src="main.js"></script>
+</body>
+</html>
