@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <title>T32b - cena strzyżenia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zadanie T32b - cena strzyżenia</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,12 +12,53 @@
   <h2>Autor: Jakub Grzegorczyk</h2>
 </header>
 <div>
-  <h1>Dziś promocja na strzyżenie włosów</h1>
-  <span><input id="krotkie" type="radio" name="dlugosc"><label for="krotkie">Krótkie</label><br></span>
-  <span><input id="srednie" type="radio" name="dlugosc"><label for="srednie">Średnie</label><br></span>
-  <span><input id="poldlugie" type="radio" name="dlugosc"><label for="poldlugie">Półdługie</label><br></span>
-  <span><input id="dlugie" type="radio" name="dlugosc"><label for="dlugie">Długie</label><br></span>
-  <button id="btn">Odkryj promocję</button>
+  <p>Wymagania dotyczące skryptu:</p>
+  <ul>
+    <li>Napisany w języku wykonywanym po stronie przeglądarki</li>
+    <li>Uruchamia się po wciśnięciu przycisku na stronie fryzura.html</li>
+    <li>Podaje cenę strzyżenia w zależności od wyboru dokonanego przez pola radio</li>
+    <li>Wyświetla wynik działania pod przyciskiem według wzoru: „Cena strzyżenia: <\wartość>”, gdzie <\wartość> oznacza cenę strzyżenia dla wskazanej długości włosów</li>
+  </ul>
+  <p>Cennik:</p>
+  <table>
+    <tr>
+      <th>Długość włosów</th>
+      <th>Cena</th>
+    </tr>
+    <tr>
+      <td>Krótkie</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Średnie</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Półdługie</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Długie</td>
+      <td>50</td>
+    </tr>
+  </table>
+</div>
+<div>
+  <p>Wybierz długość włosów:</p>
+  <input type="radio" id="krótkie" name="długość" value="krótkie">
+  <label for="krótkie">Krótkie</label>
+  <br>
+  <input type="radio" id="średnie" name="długość" value="średnie">
+  <label for="średnie">Średnie</label>
+  <br>
+  <input type="radio" id="półdługie" name="długość" value="półdługie">
+  <label for="półdługie">Półdługie</label>
+  <br>
+  <input type="radio" id="długie" name="długość" value="długie">
+  <label for="długie">Długie</label>
+  <br>
+  <button id="strzyżenie">Strzyżenie</button>
+  <p id="wynik"></p>
 </div>
 <script src="main.js"></script>
 </body>
