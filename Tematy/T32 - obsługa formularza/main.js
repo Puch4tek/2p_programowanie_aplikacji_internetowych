@@ -18,3 +18,5 @@ dateInput.addEventListener('input', () => {
 range.addEventListener('input', () => {
     grade.textContent = range.value.toString();
 });
+
+

@@ -1,6 +1,4 @@
-const wynik = document.querySelector('#wynik');
-const btn = document.querySelector('#btn');
+//Write a typescript bubble sort function
 
-btn.addEventListener('click', () => {
-    wynik.innerHTML = 'Hello World!';
-});
+
+

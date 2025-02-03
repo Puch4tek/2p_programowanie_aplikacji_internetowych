@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T32 - obsługa formularza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Zadanie T32</h1>
+    <h2>Autor: Jakub Grzegorczyk</h2>
+</header>
+<div>
+    <p>
+        Zadanie polega na stworzeniu aplikacji JavaScript według wzoru pokazanego na grafice. Zwróć uwagę, że nagłówek h1 "Ustalenie wartości za pomocą suwaka" - zmienia kolor na taki, jaki został wybrany przez użytkownika w polu "Ocena kolorem". Również łańcuch znaków "ocena kolorem", powinien być zapisany w wybranym kolorze.
+    </p>
+</div>
+<div id="wynik">
+    <h1 id="h1">Ustalenie wartości za pomocą suwaka</h1>
+    <h2>Komponent "range"</h2>
+    <label for="range"></label><input type="range" id="range" min="0" max="15" value="0">   Poziom zadowolenia obsługą od 0 do 15<br>
+    <input type="date" id="dateInput" value="0"><br><label for="dateInput">data wykonania usługi</label><br>
+    <input type="color" id="color" value="#000000"><br>
+    <label for="color">ocena kolorem</label><br><br>
+    <button id="btn">Działaj</button>
+    <br>
+    <p>Usługę wykonano: <span id="dateOutput"></span></p>
+    <p>Ocena klienta: <span id="grade"></span></p>
+    <p id="colorGrade1">Ocena kolorem: <span id="colorGrade2">ocena kolorem</span></p>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
