@@ -1,34 +1,32 @@
-const selectedRadio = document.querySelector('input[name="dlugosc"]:checked');
-
-// Funkcja obliczająca cenę strzyżenia
 function obliczCeneStrzyzenia(dlugosc) {
     let cena;
     switch (dlugosc) {
-        case "krotkie":
+        case "1":
             cena = 25;
             break;
-        case "srednie":
+        case "2":
             cena = 30;
             break;
-        case "poldlugie":
+        case "3":
             cena = 40;
             break;
-        case "dlugie":
+        case "4":
             cena = 50;
             break;
         default:
-            cena = 0; // Default case to handle unexpected values
+            cena = 0;
     }
     return cena;
 }
 
-// Przypisanie zdarzenia do przycisku "Strzyżenie"
 document.getElementById('strzyzenie').addEventListener('click', function() {
+    const selectedRadio = document.querySelector('input[name="dlugosc"]:checked');
+
     if (selectedRadio) {
         let dlugosc = selectedRadio.value;
         let cena = obliczCeneStrzyzenia(dlugosc);
-        document.getElementById('wynik').textContent = `Cena strzyżenia: ${cena}`;
+        document.getElementById('wynik').textContent = `Cena strzyżenia: ${cena} zł`;
     } else {
-
+        document.getElementById('wynik').textContent = "Wybierz długość włosów!";
     }
 });
