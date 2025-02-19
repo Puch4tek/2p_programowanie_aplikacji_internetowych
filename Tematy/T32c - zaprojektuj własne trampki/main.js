@@ -13,6 +13,13 @@ const wynik = document.querySelector('#wynik');
 console.log('click');
 
 btn1.addEventListener('click', () => {
+    const imieNazwisko = form.elements.name;
+    const email = form.elements.email;
+    const telefon = form.elements.telephone;
+    const story = form.elements.story;
+    const color = form.elements.color.value;
+    const checkbox = form.elements.check1;
+    const size = form.elements.size;
     console.log('click');
     const checkedBoxes = [...checkbox]
         .filter(checkbox => checkbox.checked)
