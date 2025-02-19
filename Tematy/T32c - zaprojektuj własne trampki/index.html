@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>T32c - Zaprojektuj własne trampki </title>
+  <meta name="author" content="Jakub Grzegorczyk">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Zadanie T32c</h1>
+  <h2>Autor: Jakub Grzegorczyk</h2>
+</header>
+<div>
+  <form id="form">
+    <fieldset id="formdata">
+      <legend>Podstawowe dane</legend>
+      <ul>
+        <li><label for="form-name">Imię i nazwisko: </label><input class="text" type="text" name="name" id="form-name"></li>
+        <li><label for="form-email">E-mail: </label><input class="text" type="email" name="email" id="form-email"></li>
+        <li><label for="form-tel">Telefon: </label><input class="text" type="text" name="telephone" id="form-tel"></li>
+        <li><label for="form-story">Moje buty są takie stare...</label><br>
+          <textarea name="story" id="form-story" cols="60" rows="4" maxlength="300" placeholder="Nie więcej niż 300 znaków"></textarea></li>
+      </ul>
+    </fieldset>
+    <h1>Zaprojektuj własne trampki</h1>
+    <fieldset>
+      <legend>Własny projekt butów</legend>
+      <fieldset id="field1">
+        <legend>Kolor (wybierz jeden)</legend>
+        <label><input type="radio" name="color" value="red">Czerwony</label> <br>
+        <label><input type="radio" name="color" value="blue">Niebieski</label> <br>
+        <label><input type="radio" name="color" value="black">Czarny</label> <br>
+        <label><input type="radio" name="color" value="silver">Srebrny</label> <br>
+      </fieldset>
+      <fieldset id="field2">
+        <legend>Opcje (możesz wybrać kilka)</legend>
+        <input type="checkbox" id="check1" name="check1"> <label for="check1">Błyszczące sznurówki</label> <br>
+        <input type="checkbox" id="check2" name="check1"> <label for="check2">Metalowe logo</label> <br>
+        <input type="checkbox" id="check3" name="check1"> <label for="check3">Święcące podeszwy</label> <br>
+        <input type="checkbox" id="check4" name="check1"> <label for="check4">Odtwarzanie MP3</label> <br>
+      </fieldset>
+      <fieldset id="field3">
+        <legend>Rozmiar</legend>
+        <p><label for="selectsize">Rozmiar zgodny ze standardowymi rozmiarami butów: </label><select name="size" id="selectsize" size="1">
+          <option value="37">37</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+          <option value="41">41</option>
+          <option value="42">42</option>
+          <option value="43">43</option>
+          <option value="44">44</option>
+          <option value="45">45</option>
+          <option value="46">46</option>
+          <option value="47">47</option>
+          <option value="48">48</option>
+        </select></p>
+      </fieldset>
+    </fieldset>
+  </form>
+</div>
+<div>
+  <button id="btn1">Prześlij</button>
+  <button id="btn2">Wyczyść</button>
+</div>
+<div id="wynik"></div>
+<script src="main.js"></script>
+</body>
+</html>
