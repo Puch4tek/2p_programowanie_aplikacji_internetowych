@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T33 - walidacja formularzy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Zadanie T33</h1>
+  <h2>Autor: Jakub Grzegorczyk</h2>
+</header>
+<div>
+    <p>Zapoznaj się z rozdziałem dotyczącym walidacji formularzy z podręcznika (podręcznik dostępny w materiałach do kursu).
+        <br>
+
+        Należy wykonać projekt, który zawiera formularz zmiany hasła. <br> <br>
+
+        Formularz powinien zawierać: <br> <br>
+
+        nazwę użytkownika (dowolne znaki, ale nie może być pusty), <br>
+        adres e-mail (nie może być pusty i zawiera prawidłowy adres e-mail z domeną zspglogow.pl), <br>
+        dwa pola do wprowadzenia hasła (minimum 8 znaków, litery małe i duże, cyfry i znaki specjalne). <br>
+        przycisk z napisem "Zmień hasło". <br>
+        Skrypt w przypadku prawidłowo wypełnionego formularza wyświetla dane na stronie (wiadomo, że to bez sensu, ale chodzi o łatwe sprawdzenie, czy wszystko działa prawidłowo).
+        <br> <br>
+
+        Na stronie powinny być również widoczne: <br> <br>
+
+        nazwa zadania, <br>
+        imię nazwisko i klasa autora, <br>
+        treść zadania.</p>
+</div>
+<div>
+    <form id="form">
+        <label for="username">Nazwa użytkownika:</label> <br>
+        <input type="text" id="username" name="username" required> <br>
+
+        <label for="email">Adres e-mail:</label> <br>
+        <input type="email" id="email" name="email" required> <br>
+
+        <label for="password">Hasło:</label> <br>
+        <input type="password" id="password" name="password" required> <br>
+
+        <label for="confirmPassword">Potwierdź hasło:</label> <br>
+        <input type="password" id="confirmPassword" name="confirmPassword" required> <br> <br>
+        <button id="btn" type="button">Zmień hasło</button>
+        <button type="reset">Wyczyść formularz</button>
+    </form>
+
+</div>
+<div id="wynik"></div>
+<script src="main.js"></script>
+</body>
+</html>
