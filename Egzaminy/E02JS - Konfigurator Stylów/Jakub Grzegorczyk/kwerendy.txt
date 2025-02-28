@@ -1,0 +1,2 @@
+CREATE USER 'Agnieszka'@'*' IDENTIFIED BY 'haslo4';
+SELECT AVG(rocznik) AS sredni_rocznik FROM samochody WHERE marka = 'Opel';
