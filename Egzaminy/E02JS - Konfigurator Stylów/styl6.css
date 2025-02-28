@@ -1,0 +1,28 @@
+* {
+    font-family: Georgia, serif;
+}
+#lewy {
+    background: maroon;
+    color: white;
+    height: 600px;
+    width: 30%
+}
+#prawy {
+    background: maroon;
+    color: white;
+    height: 600px;
+    width: 70%;
+    overflow: auto;
+}
+footer {
+    background: dimgray;
+    color: white;
+}
+p {
+    padding: 10px;
+}
+img {
+    padding 10px;
+    border: 10px solid white;
+}
+#
