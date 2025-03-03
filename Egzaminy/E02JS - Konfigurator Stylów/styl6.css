@@ -1,28 +1,68 @@
-* {
+body {
     font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
 }
-#lewy {
-    background: maroon;
-    color: white;
+
+main {
+    display: flex;
     height: 600px;
-    width: 30%
 }
-#prawy {
-    background: maroon;
+
+#left {
+    background-color: Maroon;
     color: white;
-    height: 600px;
-    width: 70%;
-    overflow: auto;
-}
-footer {
-    background: dimgray;
-    color: white;
-}
-p {
+    width: 30%;
     padding: 10px;
 }
-img {
-    padding 10px;
-    border: 10px solid white;
+
+#right {
+    background-color: Maroon;
+    color: white;
+    width: 70%;
+    padding: 10px;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
-#
+
+#right img, #right ul {
+    margin: 10px;
+}
+
+#right p {
+    width: 100%;
+    margin: 10px;
+}
+
+footer {
+    background-color: DimGray;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    margin: 5px;
+}
+
+button:nth-child(1) {
+    background-color: Indigo;
+    color: white;
+}
+
+button:nth-child(2) {
+    background-color: SteelBlue;
+    color: white;
+}
+
+button:nth-child(3) {
+    background-color: Olive;
+    color: white;
+}
+
+img {
+    border: 1px solid white;
+    padding: 10px;
+}
