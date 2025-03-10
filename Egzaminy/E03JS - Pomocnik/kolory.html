@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Pomocnik CSS</title>
+  <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+<div id="container">
+  <div id="banners">
+    <section id="banner1">
+      <h1>Pomocnik CSS</h1>
+    </section>
+    <section id="banner2">
+      <ul>
+        <li><a href="kolory.html">Kolory</a></li>
+        <li><a href="czcionki.html">Czcionki</a></li>
+        <li><a href="style.html">Style CSS</a></li>
+        <li><a href="https://www.w3schools.com/css/" target="_blank">Pomoc</a></li>
+      </ul>
+    </section>
+  </div>
+  <section id="main">
+    <h2>Podaj składową H koloru w kodzie HSL</h2>
+    <p>0 do 30 czerwienie, do 60 żółcie, do 150 zielenie, do 250 niebieskie, do 360 fiolet i purpura</p>
+    <div class="input-container">
+      <img src="kolory.jpg" alt="Przestrzeń barw HSL" width="500" height="75">
+      <div>
+        <input type="number" id="h-value" max="360" placeholder="0 - 360">
+        <button id="btn">Generuj paletę</button>
+      </div>
+    </div>
+    <table>
+      <tr>
+        <td colspan="4">Kolor główny</td>
+      </tr>
+      <tr>
+        <td>kolor 2</td>
+        <td>kolor 3</td>
+        <td>kolor 4</td>
+        <td>kolor 5</td>
+      </tr>
+    </table>
+  </section>
+  <footer>
+    <p>Autor: Jakub Grzegorczyk</p>
+  </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
